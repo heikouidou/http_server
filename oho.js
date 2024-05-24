@@ -1,3 +1,4 @@
+// んにゃあああ　み、見ないでってえ…言ったにゃあん…っ！！
 function encoho()
 {
   let inputOho = document.getElementById("inputOho").value;
