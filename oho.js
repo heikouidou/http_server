@@ -6,11 +6,19 @@ function encoho()
   let checkValue = choice.elements['radio'].value;
 
   if (checkValue == "encode") {
-    document.getElementById("outputOho").textContent = morseCodeToOho(textToMorseCode(inputOho));
+    document.getElementById("outputOho").value = morseCodeToOho(textToMorseCode(inputOho));
   }
   if (checkValue == "decode") {
-    document.getElementById("outputOho").textContent = morseCodeToText(ohoToMorseCode(inputOho));
+    document.getElementById("outputOho").value = morseCodeToText(ohoToMorseCode(inputOho));
   }
+}
+
+function clearOho()
+{
+  console.log('pushed');
+  document.getElementById("inputOho").value = '';
+  document.getElementById("outputOho").value = '';
+  console.log('cleared');
 }
 
 const hiraganaToMorse = {
@@ -86,7 +94,7 @@ function textToMorseCode(text) {
 function morseCodeToText(morseCode) {
   let resultMTT = morseCode.split(' ').map(char => morseToChar[char] || '').join('');
   console.log(resultMTT);
-  return String(resultMTT);
+  return resultMTT;
 }
 
 // モールス信号をオホ声に変換する関数
