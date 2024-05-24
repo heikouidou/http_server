@@ -1,0 +1,4 @@
+function encoho()
+{
+  alert("test");
+}
