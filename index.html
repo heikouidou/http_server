@@ -4,6 +4,7 @@
 <head>
   <title>オホ声モールス信号</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="oho.css">
   <link rel="stylesheet" type="text/css" id="u0" href="https://rakko.tools/tools/129/lib/tinymce/skins/ui/oxide/content.min.css">
   <link rel="stylesheet" type="text/css" id="u1" href="https://rakko.tools/tools/129/lib/tinymce/skins/content/default/content.min.css">
 </head>
@@ -11,14 +12,14 @@
 <body id="tinymce" class="mce-content-body " data-id="content" contenteditable="true" spellcheck="false">
   <h2>オホ声モールス信号</h2>
   <p>ここに暗号化・復号化したい文を入力</p>
-  <p><textarea name="inputOho" id="inputOho" cols="40" placeholder="ひらがなで入力"></textarea></p>
+  <p><textarea name="inputOho" id="inputOho" cols="100" placeholder="ひらがなかアルファベットで入力(小さい「あいうえおやゆよつ」は大きくしてください)"></textarea></p>
   <form id="choice">
     <label><input type="radio" name="radio" value="encode">暗号化</label>
-    <label><input type="radio" name="radio" value="decode">復号化(濁点半濁点なし)</label>
+    <label><input type="radio" name="radio" value="decode">復号化</label>
   </form>
   <p><input type="button" onclick="encoho()" value="変換"></p>
   <p>結果</p>
-  <p><textarea name="outputOho"  id="outputOho" cols="40"></textarea></p>
+  <p><textarea name="outputOho"  id="outputOho" cols="100"></textarea></p>
 
 <script src="./oho.js"></script>
 </body>
