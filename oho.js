@@ -24,7 +24,7 @@ function clearOho()
 
 function xPost()
 {
-  location.href = "http://twitter.com/share?text=" + document.getElementById("outputOho").value;
+  location.replace("http://twitter.com/share?text=" + document.getElementById("outputOho").value);
 }
 
 const hiraganaToMorse = {
