@@ -22,6 +22,11 @@ function clearOho()
   console.log('cleared');
 }
 
+function xPost()
+{
+  location.href = "http://twitter.com/share?text=" + document.getElementById("outputOho").value;
+}
+
 const hiraganaToMorse = {
     'あ': '--.--', 'い': '.-', 'う': '..-', 'え': '-.---', 'お': '.-...',
     'か': '.-..', 'き': '-.-..', 'く': '...-', 'け': '-.--', 'こ': '----',

@@ -10,13 +10,14 @@
 <body>
   <h2>オホ声モールス信号</h2>
   <p>ここに暗号化・復号化したい文を入力</p>
-  <p><textarea name="inputOho" id="inputOho" cols="100" placeholder="ひらがなかアルファベットで入力(小さい「あいうえおやゆよつ」は大きくしてください)"></textarea></p>
+  <p><textarea name="inputOho" id="inputOho" cols="100" placeholder="ひらがなで入力(小さい「あいうえおやゆよつ」は大きくしてください)"></textarea></p>
   <form id="choice">
     <label><input type="radio" name="radio" value="encode">暗号化</label>
     <label><input type="radio" name="radio" value="decode">復号化</label>
   </form>
   <p><input type="button" onclick="encoho()" value="変換"></p>
   <p><input type="button" onclick="clearOho()" value="リセット"></p>
+  <p><input type="button" onclick="xPost()" value="Xへ結果をポスト"></p>
   <p>結果</p>
   <p><textarea name="outputOho" id="outputOho" cols="100"></textarea></p>
 
